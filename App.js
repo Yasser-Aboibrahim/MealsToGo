@@ -14,7 +14,7 @@ import { LocationContextProvider } from "./src/services/location/location.contex
 import { Navigation } from "./src/infrastructure/navigation";
 import { FavouritesContextProvider } from "./src/services/favourites/favourites.context";
 import { initializeApp } from "firebase/app";
-import * as firebase from "firebase";
+import firebase from "firebase/compat/app";
 import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
 
 const firebaseConfig = {
@@ -23,7 +23,7 @@ const firebaseConfig = {
   projectId: "mealstogo-beed5",
   storageBucket: "mealstogo-beed5.appspot.com",
   messagingSenderId: "942582072822",
-  appId: "1:942582072822:web:a5e5172eb8d2704e3673d7"
+  appId: "1:942582072822:web:a5e5172eb8d2704e3673d7",
 };
 
 if (!firebase.apps.length) {
