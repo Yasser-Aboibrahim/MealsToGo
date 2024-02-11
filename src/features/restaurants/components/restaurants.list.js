@@ -37,3 +37,4 @@ export const RestaurantsList = ({ navigation, restaurants }) => {
       />
   );
 };
+
